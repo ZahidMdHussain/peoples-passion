@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-image: url(img/img_1.jpg);
+			background-size: 100%;
+			background-position: 0px 0px;
+
+		}
+		#container{	
+			width:40%;
+			margin: 110px auto 0px 250px; 
+		}
+		#form{
+			width: 70%;
+			font-size: 18px;
+			color: white;
+			border:1px solid rgba(247, 249, 249,0.4);
+			box-sizing: border-box;
+			border-radius: 8px 6px;
+			background-color: rgba(236, 240, 241,0.1);
+			box-shadow: 3px 2px 5px #A6ACAF;
+		}
+		h2{
+			text-align: center;
+			padding: 10px;
+			font: small-caps bold 30px Copperplate Gothic Light;
+			text-decoration: underline #CACFD2 solid ;
+			text-underline-offset:5px;
+			text-decoration-thickness:2px;
+			text-shadow: 2px 2px 5px #A6ACAF;
+		}
+		form{
+			margin: 40px;
+		}
+		label{
+			font:oblique 200 16px Constantia;
+
+		}
+		input#name{
+			width: 80%;
+			padding:4px;
+			border:1px solid #ddd;
+			border-radius: 3px;
+			outline: 0px;
+			background-color: #fff;
+			box-shadow: inset 1px 1px 5px rgba(0,0,0,0.4);
+			font-family:Georgia; 
+		}
+		input#submit{
+			width: 100px;
+			padding: 3px;
+			font:small-caps 500 16px Georgia;
+			border:1px solid #D5F5E3 ;
+			border-radius: 3px;
+			box-shadow: 1px 1px 4px #A6ACAF;
+			background-color:rgba(171, 235, 198,0.4); 
+			color: #F2F4F4;
+			cursor:pointer;
+		}
+		label,span{
+			text-shadow: 1px 1px 3px;
+		}
+		#submit:hover{
+			background-color: rgba(22, 160, 133,0.5);
+			box-shadow: 2px 2px 4px #48C9B0;
+			border:1px solid #48C9B0 ;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div id="form">
+		<h2>Registration Form</h2>
+		<form  id="register" name="formcheck" action="gates.html" onsubmit="return getvalidate()">
+			<label>First Name : </label><br>
+			<input type="text" name="fname" placeholder="Enter FirstName" id="name">
+			<span class="alert1" style="font-size: 12px;
+			color: Red;"></span>
+			<br><br>
+			<label>Last Name : </label><br>
+			<input type="text" name="lname" placeholder="Enter LastName" id="name">
+			<span class="alert2" style="font-size: 12px;
+			color: Red;"></span>
+			<br><br>
+			<label>Email : </label><br>
+			<input type="email" name="email" id="name" placeholder="Enter E-mail address">
+			<span class="alert3" style="font-size: 12px;
+			color: Red;"></span><br><br>
+			<label>Age : </label><br>
+			<input type="number" name="age" id="name" placeholder="How old are You">
+			<span class="alert4" style="font-size: 12px;
+			color: Red;"></span>
+			<br><br>
+			<label>Gender : </label><br>&nbsp&nbsp
+			<input type="radio" name="gender" id="male" value="Male">&nbsp<span id="male">Male</span>
+			&nbsp&nbsp&nbsp&nbsp
+			<input type="radio" name="gender" id="female" value="Female">&nbsp<span id="female">Female</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="alert5" style="font-size: 12px;
+			color: Red;"></span><br><br>
+			<label>Known Language : </label><br>&nbsp&nbsp
+			<input type="checkbox" name="lang" id="hindi" value="Hindi">&nbsp<span id="hindi">Hindi</span>&nbsp&nbsp&nbsp
+			<input type="checkbox" name="lang" id="english" value="English">&nbsp<span id="english">English</span>&nbsp&nbsp&nbsp
+			<input type="checkbox" name="lang" id="urdu" value="Urdu">&nbsp<span id="urdu">Urdu</span> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span class="alert6" style="font-size: 12px;
+			color: Red;"></span><br><br>
+			<input type="submit" name="submit" value="Submit" id="submit"><br>
+		</form>
+	</div>
+	
+</div>
+<script type="text/javascript" src="js_validation.js"></script>
+</body>
+</html>
